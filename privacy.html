@@ -1,269 +1,1116 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="description" content="MC API MOD 개인정보 처리방침: 처리 목적, 방송국 정보 이용, SOOP 인증 절차, 보관 기간, 연동 해제 및 개인정보 삭제 안내.">
-  <title>개인정보 처리방침 | MC API MOD</title>
-  <style>
-:root{color-scheme:dark;--bg:#0b1020;--panel:#121b2f;--panel2:#18253c;--line:#2c3b53;--ink:#f2f7ff;--muted:#a6b7cd;--cyan:#5ee7fa;--blue:#568dff;--yellow:#f5cd7b;--green:#77e4b1;--max:1100px}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:98px}
-body{margin:0;background:radial-gradient(circle at 80% 0%,#173658 0%,transparent 32%),var(--bg);color:var(--ink);font:15px/1.85 system-ui,-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
-a{color:var(--cyan);text-underline-offset:3px;text-decoration:none}a:hover{text-decoration:underline}a:focus-visible{outline:3px solid var(--cyan);outline-offset:4px;border-radius:3px}
-.wrap{width:min(var(--max),calc(100% - 36px));margin-inline:auto}
-.topbar{position:sticky;top:0;z-index:10;background:#0b1020ef;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.topbar .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-size:21px;font-weight:900;letter-spacing:-.6px;color:#fff}.brand span{color:var(--cyan)}
-.nav-right{display:flex;align-items:center;gap:18px;font-size:14px;font-weight:650}.nav-right a{color:#c9d8eb}
-main{padding-bottom:70px}
-.hero{padding:54px 0 30px}.eyebrow{display:inline-flex;border:1px solid #536381;border-radius:100px;padding:5px 12px;color:var(--yellow);background:#30291b55;font-size:12px;font-weight:750}
-h1{font-size:clamp(30px,5vw,48px);letter-spacing:-1.8px;line-height:1.24;margin:19px 0 15px}
-.hero p{max-width:850px;color:#c3d4e7;font-size:16px;margin:0 0 13px}
-.metadata{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:28px 0 0}
-.meta{border:1px solid var(--line);border-radius:12px;padding:15px 18px;background:#121e33b5;min-width:0}.meta dt{font-size:12px;font-weight:750;color:var(--muted);margin:0 0 3px}.meta dd{margin:0;font-size:15px;font-weight:700}.meta a{font-weight:750}
-.notice{border:1px solid #755b2c;border-left:4px solid var(--yellow);background:#3c30201c;color:#e9d8b6;padding:17px 20px;border-radius:10px;margin:25px 0 30px}.notice strong{color:#ffdb8c}.notice p{margin:4px 0 0;font-size:14px;color:#e2d3b7}
-.content-grid{display:grid;grid-template-columns:230px minmax(0,1fr);gap:22px;align-items:start}
-.toc{position:sticky;top:94px;border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:19px 14px 14px}
-.toc h2{font-size:13px;margin:0 0 11px 8px;color:#deebfb;letter-spacing:.25px}.toc ul{margin:0;padding:0;list-style:none}.toc a{color:var(--muted);display:block;padding:7px 9px;border-radius:8px;font-size:13px;line-height:1.55}.toc a:hover{background:var(--panel2);text-decoration:none;color:var(--cyan)}
-.document{min-width:0}.policy-section{display:grid;grid-template-columns:42px minmax(0,1fr);gap:15px;border:1px solid var(--line);border-radius:16px;padding:25px 25px 25px 18px;background:linear-gradient(145deg,#142038,#10192a);margin:0 0 16px;scroll-margin-top:95px}
-.section-number{color:var(--cyan);font-size:16px;font-weight:850;font-variant-numeric:tabular-nums;padding-top:4px}
-.policy-copy h2{font-size:21px;line-height:1.45;letter-spacing:-.55px;margin:0 0 15px;color:#f2f7ff}
-.policy-copy h3{font-size:16px;margin:23px 0 8px;color:#e5efff;letter-spacing:-.1px}
-.policy-copy p{margin:0 0 12px;color:#c5d4e7}.policy-copy p:last-child{margin-bottom:0}.policy-copy strong{color:#e7f6ff}
-.policy-copy ul,.policy-copy ol{color:#c5d4e7;margin:7px 0 16px;padding-left:23px}.policy-copy li{padding-left:3px;margin:5px 0}
-.policy-copy li::marker{color:var(--cyan)}
-.policy-copy code{font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;color:#c3f3ff;background:#081525;border:1px solid #344b62;border-radius:6px;padding:2px 6px;white-space:normal;overflow-wrap:anywhere}
-.bottom-links{display:flex;flex-wrap:wrap;gap:11px;margin-top:12px}.bottom-links a{padding:10px 14px;border-radius:10px;border:1px solid #536381;color:#e2f3ff;background:#15243a;font-weight:750;font-size:14px}
-footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:13px;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:780px){.content-grid{display:block}.toc{position:static;margin-bottom:18px}.toc ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.hero{padding-top:36px}.policy-section{padding:20px 17px 22px 12px;grid-template-columns:29px minmax(0,1fr);gap:8px}.policy-copy h2{font-size:19px}.policy-copy h3{font-size:16px}}
-@media(max-width:490px){.metadata,.toc ul{grid-template-columns:1fr}.nav-right{gap:10px;font-size:12px}.brand{font-size:17px}.topbar .wrap{min-height:63px}.hero{padding-top:29px}}
-@media print{*{color:#101522!important;text-shadow:none!important}html{scroll-behavior:auto}body{background:white!important;font-size:11pt}.topbar,.toc,.bottom-links{display:none!important}.hero{padding:10px 0}.eyebrow,.notice{border:1px solid #555;background:white!important}.metadata{grid-template-columns:1fr 1fr}.meta{border:1px solid #ccc;background:white!important}.content-grid{display:block}.policy-section{display:block;border:0;border-bottom:1px solid #ddd;background:white!important;padding:12px 0;break-inside:avoid}.section-number{display:none}.policy-copy h2{margin-top:0}.wrap{width:100%;max-width:none}footer{padding:12px 0}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="MC API MOD 개인정보 처리방침">
+    <title>개인정보 처리방침 | MC API MOD</title>
+
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: #151d31;
+            --card-light: #1c2740;
+            --border: #2b3954;
+            --text: #e8edf8;
+            --muted: #a6b4ce;
+            --blue: #65baff;
+            --green: #62d9a2;
+            --yellow: #ffd17a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Malgun Gothic", "Apple SD Gothic Neo",
+                         "Noto Sans KR", sans-serif;
+            font-size: 15px;
+            line-height: 1.9;
+            overflow-wrap: break-word;
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #11192b;
+            border-bottom: 1px solid var(--border);
+            padding: 17px 24px;
+        }
+
+        .header-inner {
+            max-width: 1050px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 19px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .home-link {
+            padding: 7px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 35px 20px 70px;
+        }
+
+        .hero {
+            background: linear-gradient(
+                135deg, #16243e, #10192c
+            );
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            margin: 0 0 12px;
+            font-size: 29px;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            color: var(--muted);
+            margin: 0;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .meta-item {
+            padding: 15px;
+            background: rgba(255,255,255,0.035);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+        }
+
+        .meta-label {
+            display: block;
+            color: var(--muted);
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .notice {
+            padding: 18px 20px;
+            border: 1px solid #65502b;
+            background: #2a241c;
+            border-radius: 10px;
+            margin-bottom: 24px;
+        }
+
+        .notice strong {
+            color: var(--yellow);
+        }
+
+        .notice p {
+            margin: 7px 0 0;
+        }
+
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+        }
+
+        .toc a {
+            display: block;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 27px;
+            margin-bottom: 20px;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 21px;
+            color: #ffffff;
+            margin: 0 0 18px;
+            line-height: 1.5;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: var(--blue);
+            margin: 25px 0 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul, ol {
+            padding-left: 23px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 520px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        th {
+            background: var(--card-light);
+            color: #ffffff;
+        }
+
+        td {
+            color: var(--text);
+        }
+
+        code {
+            background: #26324a;
+            color: #a9daff;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+            overflow-wrap: anywhere;
+        }
+
+        .info-box {
+            background: var(--card-light);
+            border-left: 3px solid var(--blue);
+            padding: 14px 17px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .warning {
+            border-left-color: var(--yellow);
+        }
+
+        .status {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            background: #234333;
+            color: #93f3bd;
+        }
+
+        .status.future {
+            background: #453720;
+            color: #ffd58b;
+        }
+
+        .contact {
+            padding: 19px;
+            background: var(--card-light);
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            padding: 28px 15px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            main {
+                padding: 20px 12px 45px;
+            }
+
+            .hero, section, .toc {
+                padding: 19px;
+            }
+
+            .hero h1 {
+                font-size: 23px;
+            }
+
+            .meta {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="topbar"><div class="wrap">
-    <a class="brand" href="index.html">MC API <span>MOD</span></a>
-    <nav class="nav-right" aria-label="페이지 메뉴">
-      <a href="index.html">서비스 소개</a>
-      <a href="#section-7">삭제 방법</a>
-      <a href="#section-8">문의</a>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">MC API MOD</div>
+        <a class="home-link" href="index.html">
+            홈페이지로 돌아가기
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <div class="hero">
+        <h1>개인정보 처리방침</h1>
+
+        <p>
+            MC API MOD의 개인정보 처리 목적,
+            이용 항목, 보관 기간, 보호 조치 및
+            삭제 방법을 안내합니다.
+        </p>
+
+        <div class="meta">
+            <div class="meta-item">
+                <span class="meta-label">운영자</span>
+                <span class="meta-value">
+                    개인 개발자 Shibarski
+                </span>
+            </div>
+
+            <div class="meta-item">
+                <span class="meta-label">문의 이메일</span>
+                <a href="mailto:dnsl8807@naver.com">
+                    dnsl8807@naver.com
+                </a>
+            </div>
+
+            <div class="meta-item">
+                <span class="meta-label">개인정보 처리방침 시행일</span>
+                <span class="meta-value">
+                    2026년 10월 31일
+                </span>
+            </div>
+
+            <div class="meta-item">
+                <span class="meta-label">서비스 시행 예정일</span>
+                <span class="meta-value">
+                    2026년 11월 30일
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="notice">
+        <strong>서비스 개발 및 API 승인 안내</strong>
+        <p>
+            MC API MOD는 현재 개발 중이며,
+            SOOP API의 실제 계정 인증 및 실시간 방송
+            연동은 아직 완료되지 않았습니다.
+        </p>
+        <p>
+            아래에서 개발 예정으로 표시된 기능은
+            SOOP API의 지원 범위와 권한 승인 여부를
+            확인한 후 구현 및 검증할 예정입니다.
+        </p>
+    </div>
+
+    <nav class="toc" aria-label="개인정보 처리방침 목차">
+        <h2>목차</h2>
+        <a href="#purpose">1. 개인정보 처리 목적</a>
+        <a href="#data">2. 처리하는 개인정보 항목</a>
+        <a href="#station">3. 방송국 정보 조회 및 이용</a>
+        <a href="#auth">4. 로그인 및 정보 전달 절차</a>
+        <a href="#retention">5. 개인정보 보관 기간 및 방법</a>
+        <a href="#security">6. 접근 권한 및 보안 조치</a>
+        <a href="#deletion">7. 연동 해제 및 정보 삭제</a>
+        <a href="#contact">8. 개인정보 문의 및 삭제 요청</a>
+        <a href="#development">9. 개발 및 서비스 운영 상태</a>
     </nav>
-  </div></header>
-  <main id="top">
-    <div class="wrap hero">
-      <span class="eyebrow">개인정보 보호 안내 · 개발 및 승인 준비 단계</span>
-      <h1>개인정보 처리방침</h1>
-      <p>본 개인정보 처리방침은 MC API MOD에서 처리하는 개인정보의 항목, 이용 목적, 보관 기간, 보호 조치 및 삭제 절차를 안내합니다.</p>
-      <p>현재 SOOP API 연동 기능은 개발 및 승인 준비 단계이며, 아래에서 개발 예정으로 표시한 기능은 실제 서비스 배포 전 구현하고 검증할 계획입니다.</p>
-      <dl class="metadata">
-        <div class="meta"><dt>서비스 시행 예정일</dt><dd>2026년 11월 30일</dd></div>
-        <div class="meta"><dt>개인정보 처리방침 시행일</dt><dd>2026년 10월 31일</dd></div>
-        <div class="meta"><dt>운영자</dt><dd>개인 개발자 Shibarski</dd></div>
-        <div class="meta"><dt>문의 및 삭제 요청</dt><dd><a href="mailto:dnsl8807@naver.com">dnsl8807@naver.com</a></dd></div>
-        <div class="meta" style="grid-column:1/-1"><dt>서비스 형태</dt><dd>Minecraft Fabric 싱글플레이용 SOOP 연동 모드</dd></div>
-      </dl>
-      <div class="notice" role="note"><strong>개발 현황 안내</strong><p>현재 SOOP API 연동은 개발 및 승인 준비 단계입니다. 실제 OAuth 인증·실시간 방송 데이터 수신은 아직 검증되지 않았으며, 아래의 예정 기능은 서비스 배포 전 구현 및 검증할 계획입니다.</p></div>
-    </div>
-    <div class="wrap content-grid">
-      <aside class="toc" aria-label="개인정보 처리방침 목차">
-        <h2>문서 목차</h2>
+
+    <!-- 1. 개인정보 처리 목적 -->
+    <section id="purpose">
+        <h2>1. 개인정보 처리 목적</h2>
+
+        <p>
+            MC API MOD는 Minecraft Fabric 싱글플레이
+            환경에서 SOOP 방송 시청자가 게임 진행에
+            참여할 수 있도록 개발 중인 모드입니다.
+        </p>
+
+        <p>
+            SOOP API 승인 후 다음 목적에 필요한
+            최소한의 정보를 처리할 예정입니다.
+        </p>
+
+        <ol>
+            <li>스트리머 본인의 SOOP 계정 인증 및 연결 확인</li>
+            <li>방송국 정보 조회를 통한 연결 계정 확인</li>
+            <li>방송 진행 여부 확인 및 연결 상태 관리</li>
+            <li>실시간 채팅 표시 및 명령어 인식</li>
+            <li>별풍선 후원 및 구독 이벤트 처리</li>
+            <li>마인크래프트 게임 이벤트 실행</li>
+        </ol>
+    </section>
+
+    <!-- 2. 개인정보 항목 -->
+    <section id="data">
+        <h2>2. 처리하는 개인정보 항목</h2>
+
+        <h3>2.1. 스트리머 계정 정보</h3>
+
+        <p>
+            OAuth 인증과 방송국 정보 조회를 통해
+            다음 정보를 처리할 예정입니다.
+        </p>
+
         <ul>
-          <li><a href="#section-1">1. 개인정보 처리 목적</a></li>
-<li><a href="#section-2">2. 처리하는 개인정보 항목</a></li>
-<li><a href="#section-3">3. 방송국 정보 조회 및 이용 방법</a></li>
-<li><a href="#section-4">4. 로그인 및 정보 전달 절차</a></li>
-<li><a href="#section-5">5. 개인정보 보관 기간 및 방법</a></li>
-<li><a href="#section-6">6. 접근 권한 및 보안 조치</a></li>
-<li><a href="#section-7">7. 연동 해제 및 개인정보 삭제</a></li>
-<li><a href="#section-8">8. 개인정보 삭제 요청 및 문의</a></li>
-<li><a href="#section-9">9. 개발 및 서비스 운영 상태</a></li>
+            <li>SOOP 계정 및 방송국 식별에 필요한 정보</li>
+            <li>방송국 이름(station_name)</li>
+            <li>스트리머 닉네임(user_nick)</li>
+            <li>OAuth 인증 코드</li>
+            <li>OAuth 접근 토큰 및 갱신 토큰</li>
         </ul>
-      </aside>
-      <div class="document" aria-label="개인정보 처리방침 본문">
-        <section class="policy-section" id="section-1" aria-labelledby="heading-1">
-<div class="section-number" aria-hidden="true">01</div>
-<div class="policy-copy">
-<h2 id="heading-1">1. 개인정보 처리 목적</h2>
-<p>MC API MOD는 SOOP 방송과 마인크래프트를 연동하여 시청자 참여형 게임 이벤트를 제공하기 위해 개발 중인 프로그램입니다.</p>
-<p>SOOP API 승인 후 다음 목적에 필요한 최소한의 정보를 처리할 예정입니다.</p>
-<ol>
-<li>스트리머 본인의 SOOP 계정 인증 및 연결 확인</li>
-<li>방송국 정보 조회를 통한 연결 계정 확인</li>
-<li>방송 진행 여부 확인 및 실시간 연결 상태 관리</li>
-<li>실시간 채팅 메시지 표시 및 명령어 인식</li>
-<li>별풍선 후원 및 구독 이벤트 처리</li>
-<li>스트리머가 지정한 마인크래프트 게임 이벤트 실행</li>
-</ol>
 
-</div>
-</section><section class="policy-section" id="section-2" aria-labelledby="heading-2">
-<div class="section-number" aria-hidden="true">02</div>
-<div class="policy-copy">
-<h2 id="heading-2">2. 처리하는 개인정보 항목</h2>
-<h3>2.1. 스트리머 계정 정보</h3>
-<p>SOOP OAuth 인증 및 방송국 정보 조회를 통해 다음 정보를 처리할 예정입니다.</p>
-<ul>
-<li>SOOP 계정 및 방송국 식별에 필요한 정보</li>
-<li>방송국 이름(station_name)</li>
-<li>스트리머 닉네임(user_nick)</li>
-<li>OAuth 인증 코드</li>
-<li>OAuth 접근 토큰 및 갱신 토큰</li>
-</ul>
-<p>SOOP 계정 비밀번호는 수집하거나 저장하지 않습니다.</p>
-<h3>2.2. 방송 채팅 및 이벤트 정보</h3>
-<p>공식 API에서 제공되고 사용 권한이 승인된 범위에서 다음 정보를 처리할 예정입니다.</p>
-<ul>
-<li>방송 채팅 메시지 내용</li>
-<li>메시지 발신자의 닉네임 및 필요한 식별정보</li>
-<li>별풍선 후원자의 닉네임과 후원 개수</li>
-<li>신규 구독 및 구독 갱신 이벤트 정보</li>
-</ul>
-<p>해당 정보는 스트리머의 게임 화면 표시 및 등록된 이벤트 실행에 사용합니다.</p>
-<h3>2.3. 게임 설정 정보</h3>
-<ul>
-<li>채팅 명령어 및 게임 이벤트 설정</li>
-<li>이벤트 실행 확률 및 활성화 여부</li>
-<li>후원·구독 이벤트 실행 조건</li>
-</ul>
-<p>게임 설정은 이용자의 PC에 있는 로컬 JSON 파일에 저장합니다.</p>
+        <div class="info-box">
+            SOOP 계정의 비밀번호는
+            MC API MOD에서 수집하거나 저장하지 않습니다.
+        </div>
 
-</div>
-</section><section class="policy-section" id="section-3" aria-labelledby="heading-3">
-<div class="section-number" aria-hidden="true">03</div>
-<div class="policy-copy">
-<h2 id="heading-3">3. 방송국 정보 조회 및 이용 방법</h2>
-<p>SOOP OAuth 인증 완료 후 방송국 정보 조회 API를 통해 인증된 계정의 방송국 이름과 스트리머 닉네임을 확인할 예정입니다.</p>
-<p>조회한 정보는 다음 용도로 사용합니다.</p>
-<ol>
-<li>마인크래프트 모드의 [연결] 화면에 현재 연결된 방송국 표시</li>
-<li>스트리머가 본인의 SOOP 계정으로 인증했는지 확인</li>
-<li>본인 방송의 연결 대상과 상태를 관리하기 위한 정보 확인</li>
-</ol>
-<p>방송 진행 여부는 별도의 방송 여부 확인 기능을 통해 판단하며, 방송국 이름과 닉네임만으로 방송 중인지 판단하지 않습니다.</p>
-<p>방송국 정보 조회 응답에 포함된 기타 정보는 해당 기능에 필요하지 않다면 별도로 저장하지 않도록 개발할 예정입니다.</p>
+        <h3>2.2. 방송 채팅 및 이벤트 정보</h3>
 
-</div>
-</section><section class="policy-section" id="section-4" aria-labelledby="heading-4">
-<div class="section-number" aria-hidden="true">04</div>
-<div class="policy-copy">
-<h2 id="heading-4">4. 로그인 및 정보 전달 절차</h2>
-<p>SOOP 계정 연결은 다음 절차로 구현할 예정입니다.</p>
-<ol>
-<li>스트리머가 게임 내 [SOOP 로그인] 버튼을 선택합니다.</li>
-<li>기본 브라우저에서 SOOP OAuth 로그인 및 권한 동의를 진행합니다.</li>
-<li>인증 완료 후 이용자 PC의 로컬 콜백 주소(127.0.0.1)로 인증 코드를 전달받습니다.</li>
-<li>인증 요청 시 생성한 state 값을 검증하여 인증 요청의 유효성을 확인합니다.</li>
-<li>HTTPS 통신을 통해 SOOP 인증 서버에서 접근 토큰을 발급받습니다.</li>
-<li>승인된 API로 방송국 정보를 조회하고 연결 계정을 확인합니다.</li>
-<li>인증이 완료되면 모드 설정 화면에 연결 상태와 방송국 정보를 표시합니다.</li>
-</ol>
-<p>SOOP 계정 인증 및 API 요청은 SOOP에서 제공하는 공식 인증 체계와 승인된 권한 범위 내에서 진행할 예정입니다.</p>
+        <p>
+            공식 API에서 제공되고 사용 권한이 승인된
+            범위에서 다음 정보를 처리할 예정입니다.
+        </p>
 
-</div>
-</section><section class="policy-section" id="section-5" aria-labelledby="heading-5">
-<div class="section-number" aria-hidden="true">05</div>
-<div class="policy-copy">
-<h2 id="heading-5">5. 개인정보 보관 기간 및 방법</h2>
-<h3>5.1. OAuth 인증 정보</h3>
-<p>초기 버전에서는 인증 토큰을 프로그램 실행 중 메모리에만 보관하도록 설계했습니다.</p>
-<ul>
-<li>인증 코드: 토큰 발급 과정에서 일시적으로 사용</li>
-<li>접근 토큰: API 인증이 필요한 동안 메모리에 보관</li>
-<li>갱신 토큰: 필요한 경우 프로그램 실행 중 메모리에 보관</li>
-<li>계정 및 방송국 표시 정보: 연결 상태를 표시하는 동안 메모리에서 사용</li>
-</ul>
-<p>게임 종료 또는 연동 해제 시 해당 정보의 메모리 참조를 제거하도록 구현할 예정입니다.</p>
-<p>인증 토큰을 별도의 로컬 설정 파일이나 외부 데이터베이스에 저장하지 않는 것을 초기 버전의 원칙으로 합니다.</p>
-<h3>5.2. 채팅 및 이벤트 정보</h3>
-<p>실시간 채팅, 후원 및 구독 정보는 이벤트 처리를 위해 일시적으로 사용하며, 별도의 채팅 기록 데이터베이스를 운영하지 않을 예정입니다.</p>
-<p>이용자의 게임 화면에 출력된 메시지는 마인크래프트 자체의 기록 또는 로그 설정에 따라 별도로 남을 수 있습니다.</p>
-<h3>5.3. 게임 설정</h3>
-<p>이벤트 설정은 이용자의 PC에 있는 다음 경로에 저장됩니다.</p>
-<p><code>config/mc_api_mod.json</code></p>
-<p>해당 설정은 이용자가 설정 초기화 기능을 사용하거나 파일을 직접 삭제할 때까지 유지될 수 있습니다.</p>
+        <ul>
+            <li>방송 채팅 메시지 내용</li>
+            <li>발신자 닉네임 및 필요한 식별정보</li>
+            <li>별풍선 후원자 닉네임과 후원 개수</li>
+            <li>신규 구독 및 구독 갱신 이벤트 정보</li>
+        </ul>
 
-</div>
-</section><section class="policy-section" id="section-6" aria-labelledby="heading-6">
-<div class="section-number" aria-hidden="true">06</div>
-<div class="policy-copy">
-<h2 id="heading-6">6. 접근 권한 및 보안 조치</h2>
-<p>MC API MOD는 다음 보안 원칙을 적용하도록 개발할 예정입니다.</p>
-<ol>
-<li>스트리머 본인이 동의한 SOOP API 권한만 사용합니다.</li>
-<li>OAuth 인증 과정에서 무작위 state 값을 생성하고 검증합니다.</li>
-<li>SOOP 인증 서버와의 통신에는 HTTPS를 사용합니다.</li>
-<li>인증 토큰을 일반 GUI나 로그에 노출하지 않습니다.</li>
-<li>계정 정보는 필요한 기능 수행에 한정하여 사용합니다.</li>
-<li>승인되지 않은 API 권한으로 정보를 요청하지 않습니다.</li>
-<li>배포용 모드에 Client Secret이 노출되지 않도록 안전한 인증 구조를 적용합니다.</li>
-</ol>
-<p>서비스 운영을 위한 별도의 계정 정보 저장 서버나 데이터베이스는 초기 버전에서 운영하지 않을 계획입니다.</p>
+        <p>
+            해당 정보는 스트리머의 게임 화면에 표시하거나
+            등록된 이벤트를 실행하는 용도로 사용할 예정입니다.
+        </p>
 
-</div>
-</section><section class="policy-section" id="section-7" aria-labelledby="heading-7">
-<div class="section-number" aria-hidden="true">07</div>
-<div class="policy-copy">
-<h2 id="heading-7">7. 연동 해제 및 개인정보 삭제</h2>
-<h3>7.1. 모드 내 연동 해제</h3>
-<p>이용자는 게임 내 다음 경로를 통해 SOOP 연동을 해제할 수 있도록 개발할 예정입니다.</p>
-<p><code>MC API MOD 설정 → 연결 → 연동 해제</code></p>
-<p>연동 해제 시 다음 작업을 수행하도록 구현할 예정입니다.</p>
-<ol>
-<li>SOOP 실시간 정보 수신 중단</li>
-<li>추가 API 요청 및 이벤트 실행 중단</li>
-<li>메모리에 보관된 인증 토큰 참조 제거</li>
-<li>계정 및 방송국 표시 정보 제거</li>
-<li>연결 상태를 미연결로 변경</li>
-</ol>
-<p>모드 내부의 연동 해제는 로컬 인증 정보를 폐기하는 것으로, SOOP 서버 측에서 발급한 권한 자체를 철회하는 것과는 구분됩니다.</p>
-<h3>7.2. SOOP 계정 권한 철회</h3>
-<p>이용자는 SOOP에서 제공하는 연결 서비스 관리 기능을 통해 별도로 애플리케이션 접근 권한을 철회할 수 있습니다.</p>
-<p>권한이 철회되거나 계정 인증이 유효하지 않은 경우 추가 API 요청을 중단하도록 구현할 예정입니다.</p>
-<h3>7.3. 로컬 설정 삭제</h3>
-<p>이용자는 게임 내 설정 초기화 기능을 사용하여 저장된 이벤트 설정을 초기화할 수 있습니다.</p>
-<p>완전한 로컬 설정 삭제를 원하는 경우 마인크래프트 설정 폴더의 <code>config/mc_api_mod.json</code> 파일을 직접 삭제할 수 있습니다.</p>
-<p>MC API MOD는 별도의 회원가입 및 자체 회원 계정 시스템을 운영하지 않을 예정입니다.</p>
+        <h3>2.3. 게임 설정 정보</h3>
 
-</div>
-</section><section class="policy-section" id="section-8" aria-labelledby="heading-8">
-<div class="section-number" aria-hidden="true">08</div>
-<div class="policy-copy">
-<h2 id="heading-8">8. 개인정보 삭제 요청 및 문의</h2>
-<p>이용자는 개인정보 처리, 연동 해제 및 데이터 삭제와 관련된 문의를 운영자 이메일로 요청할 수 있습니다.</p>
-<ul>
-<li>운영자: 개인 개발자 Shibarski</li>
-<li>문의 이메일: <a href="mailto:dnsl8807@naver.com">dnsl8807@naver.com</a></li>
-</ul>
-<p>이용자가 삭제를 요청하는 경우 운영자는 삭제 대상 및 처리 방법을 확인하고 안내합니다.</p>
-<p>이용자 PC에 저장된 로컬 데이터는 운영자가 직접 원격 삭제할 수 없으므로, 연동 해제 및 로컬 설정 삭제 절차를 안내합니다.</p>
-<p>SOOP 서버에 보관되는 정보 및 SOOP 계정 자체의 삭제는 SOOP에서 제공하는 절차에 따라 진행해야 합니다.</p>
+        <ul>
+            <li>채팅 명령어 및 이벤트 설정</li>
+            <li>이벤트 발동 확률 및 활성화 여부</li>
+            <li>후원·구독 이벤트 실행 조건</li>
+        </ul>
 
-</div>
-</section><section class="policy-section" id="section-9" aria-labelledby="heading-9">
-<div class="section-number" aria-hidden="true">09</div>
-<div class="policy-copy">
-<h2 id="heading-9">9. 개발 및 서비스 운영 상태</h2>
-<p>현재 구현된 기능은 다음과 같습니다.</p>
-<ul>
-<li>마인크래프트 모드 설정 GUI</li>
-<li>채팅·후원·구독 이벤트 설정 및 관리</li>
-<li>이벤트별 실행 확률 설정</li>
-<li>가상 채팅·후원·구독 이벤트 시뮬레이터</li>
-<li>로컬 JSON 설정 저장</li>
-<li>OAuth 로그인 및 로컬 연동 해제 기초 코드</li>
-</ul>
-<p>OAuth 인증의 실제 계정 연결과 SOOP 실시간 API 수신은 아직 검증 및 구현이 완료되지 않았습니다.</p>
-<p>SOOP API 승인 후 인증, 방송 상태 조회, 실시간 채팅·후원·구독 연동 기능을 개발하고 관련 보안 및 삭제 절차를 검증한 뒤 제공할 예정입니다.</p>
-<p>본 개인정보 처리방침은 실제 서비스 구현 및 운영 내용에 맞추어 수정될 수 있으며, 변경 사항은 서비스 안내 페이지를 통해 공지하겠습니다.</p>
+        <p>
+            게임 설정은 이용자의 PC에 있는
+            로컬 JSON 파일에 저장됩니다.
+        </p>
+    </section>
 
-</div>
-</section>
-        <div class="bottom-links"><a href="index.html">← 서비스 소개로 돌아가기</a><a href="#top">↑ 맨 위로</a></div>
-      </div>
-    </div>
-  </main>
-  <footer><div class="wrap"><span>© 2026 MC API MOD · 개인 개발자 Shibarski</span><span>개인정보 처리방침 시행일 2026년 10월 31일 · <a href="mailto:dnsl8807@naver.com">문의 이메일</a></span></div></footer>
+    <!-- 3. 방송국 정보 조회 -->
+    <section id="station">
+        <h2>3. 방송국 정보 조회 및 이용 방법</h2>
+
+        <p>
+            SOOP OAuth 인증 완료 후 방송국 정보 조회
+            API를 통해 인증된 방송국의 정보를
+            확인할 예정입니다.
+        </p>
+
+        <h3>3.1. API 응답 항목 및 사용 목적</h3>
+
+        <p>
+            다음은 공개된 SOOP 연동 구현에서 확인한
+            응답 필드를 기준으로 정리한 항목입니다.
+            MC API MOD에서 실제로 사용할 항목과
+            사용하지 않을 항목을 구분했습니다.
+        </p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>응답 필드</th>
+                        <th>정보</th>
+                        <th>사용 여부</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>station_name</code></td>
+                        <td>방송국 이름</td>
+                        <td>연결 화면 표시</td>
+                    </tr>
+                    <tr>
+                        <td><code>user_nick</code></td>
+                        <td>스트리머 닉네임</td>
+                        <td>보조 표시 정보</td>
+                    </tr>
+                    <tr>
+                        <td><code>profile_image</code></td>
+                        <td>프로필 이미지 경로</td>
+                        <td>사용하지 않을 예정</td>
+                    </tr>
+                    <tr>
+                        <td><code>lately_broad_date</code></td>
+                        <td>최근 방송 날짜</td>
+                        <td>사용하지 않을 예정</td>
+                    </tr>
+                    <tr>
+                        <td><code>favorite_cnt</code></td>
+                        <td>애청자 수</td>
+                        <td>사용하지 않을 예정</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            위 필드 목록은 실제 승인된 애플리케이션에서
+            검증한 응답이 아닙니다. API 승인 후
+            실제 응답 항목을 확인하고 필요한 경우
+            본 처리방침을 수정할 예정입니다.
+        </p>
+
+        <h3>3.2. 조회 정보의 실제 사용 목적</h3>
+
+        <ol>
+            <li>
+                [연결] 설정 화면에 인증된 방송국의
+                이름을 표시합니다.
+            </li>
+            <li>
+                스트리머가 본인의 SOOP 계정으로
+                연결했는지 확인합니다.
+            </li>
+            <li>
+                본인 방송 연결 대상 및 상태 관리에
+                필요한 정보를 확인합니다.
+            </li>
+        </ol>
+
+        <p>
+            방송국 이름이 제공되지 않는 경우
+            스트리머 닉네임을 보조 표시 정보로
+            사용할 예정입니다.
+        </p>
+
+        <p>
+            방송 진행 여부는 별도의 방송 상태 확인
+            API를 통해 판단하며, 방송국 정보 조회
+            결과만으로 방송 여부를 판단하지 않습니다.
+        </p>
+
+        <p>
+            기능에 사용하지 않는 응답 정보는 별도로
+            저장하지 않도록 개발할 예정입니다.
+        </p>
+    </section>
+
+    <!-- 4. 인증 절차 -->
+    <section id="auth">
+        <h2>4. 로그인 및 정보 전달 절차</h2>
+
+        <p>
+            SOOP API 승인 이후 다음 순서로
+            계정 연결 기능을 제공할 예정입니다.
+        </p>
+
+        <ol>
+            <li>
+                스트리머가 게임 내
+                [SOOP 로그인] 버튼을 선택합니다.
+            </li>
+            <li>
+                기본 브라우저에서 SOOP OAuth
+                로그인 및 권한 동의를 진행합니다.
+            </li>
+            <li>
+                인증 완료 후 이용자 PC의 로컬 콜백
+                주소(127.0.0.1)로 인증 코드를 전달받습니다.
+            </li>
+            <li>
+                인증 요청의 state 값을 검증합니다.
+            </li>
+            <li>
+                HTTPS 통신을 통해 SOOP 인증 서버에서
+                접근 토큰을 발급받습니다.
+            </li>
+            <li>
+                방송국 정보를 조회하여 연결된 계정을
+                확인하고 설정 화면에 표시합니다.
+            </li>
+            <li>
+                방송 진행 여부를 확인하고 승인된
+                권한 범위에서 실시간 채팅 및 이벤트
+                수신을 시작합니다.
+            </li>
+            <li>
+                방송 종료 또는 연동 해제 시
+                수신과 이벤트 실행을 중단합니다.
+            </li>
+        </ol>
+
+        <div class="info-box warning">
+            <strong>현재 구현 상태</strong>
+            <p>
+                OAuth 및 로컬 콜백 기초 코드는 작성되어
+                있으나 실제 SOOP 계정 인증과 API 연결은
+                검증되지 않았습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. 보관 기간 -->
+    <section id="retention">
+        <h2>5. 개인정보 보관 기간 및 방법</h2>
+
+        <h3>5.1. OAuth 인증 정보</h3>
+
+        <p>
+            초기 버전은 인증 정보를 프로그램 실행 중
+            메모리에서만 처리하도록 설계했습니다.
+        </p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>정보</th>
+                        <th>보관 방법 및 기간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OAuth 인증 코드</td>
+                        <td>
+                            토큰 발급 시 일시적으로 사용하며
+                            별도 파일에 저장하지 않을 예정
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>접근 토큰</td>
+                        <td>
+                            인증이 필요한 동안 메모리에 보관
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>갱신 토큰</td>
+                        <td>
+                            필요한 경우 실행 중 메모리에 보관
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>방송국 표시 정보</td>
+                        <td>
+                            계정 연결 상태가 유지되는 동안
+                            메모리에서 사용
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            게임 종료 또는 연동 해제 시 인증 정보의
+            메모리 참조를 제거하도록 구현할 예정입니다.
+        </p>
+
+        <p>
+            초기 버전에서는 인증 토큰을
+            로컬 설정 파일이나 별도의 외부 데이터베이스에
+            저장하지 않을 계획입니다.
+        </p>
+
+        <h3>5.2. 채팅 및 이벤트 정보</h3>
+
+        <p>
+            실시간 채팅, 후원 및 구독 정보는 이벤트
+            처리와 화면 표시를 위해 일시적으로 사용하며,
+            모드 자체의 별도 채팅 기록 데이터베이스는
+            운영하지 않을 예정입니다.
+        </p>
+
+        <p>
+            다만 마인크래프트 기본 채팅창에 표시된
+            메시지는 마인크래프트의 게임 로그에
+            기록될 수 있습니다.
+        </p>
+
+        <h3>5.3. 게임 로그에 남을 수 있는 개인정보</h3>
+
+        <p>
+            게임 로그에는 실제 출력 방식과 게임 및
+            런처 설정에 따라 다음 정보가 기록될 수 있습니다.
+        </p>
+
+        <ul>
+            <li>시청자 닉네임</li>
+            <li>방송 채팅 메시지</li>
+            <li>후원자 닉네임 및 별풍선 개수</li>
+            <li>구독 이벤트 관련 출력 메시지</li>
+        </ul>
+
+        <h3>5.4. 게임 로그 저장 위치</h3>
+
+        <p>
+            게임 로그는 마인크래프트 실행
+            디렉터리의 다음 폴더에 저장될 수 있습니다.
+        </p>
+
+        <div class="info-box">
+            <code>logs/</code>
+        </div>
+
+        <p>대표적인 로그 파일은 다음과 같습니다.</p>
+
+        <ul>
+            <li>
+                <code>latest.log</code>
+                — 최근 게임 실행 기록
+            </li>
+            <li>
+                <code>날짜-번호.log.gz</code>
+                — 이전 게임 실행 기록
+            </li>
+        </ul>
+
+        <p>
+            기본 마인크래프트 런처에서는 일반적으로
+            다음 경로를 사용합니다.
+        </p>
+
+        <div class="info-box">
+            <code>%appdata%\.minecraft\logs</code>
+        </div>
+
+        <p>
+            Prism Launcher 등 인스턴스별 게임 폴더를
+            사용하는 런처에서는 저장 위치가 다를 수 있습니다.
+        </p>
+
+        <h3>5.5. 로그 접근 권한</h3>
+
+        <p>
+            로그 파일은 스트리머가 게임을 실행하는
+            로컬 PC에 저장됩니다.
+        </p>
+
+        <p>
+            해당 PC의 사용자 계정, 시스템 관리자 및
+            이용자가 접근 권한을 부여한 프로그램이
+            파일에 접근할 수 있습니다.
+        </p>
+
+        <p>
+            MC API MOD 운영자는 해당 로그를
+            별도로 수집하거나 이용자 PC에 원격으로
+            접속하여 열람하지 않습니다.
+        </p>
+
+        <h3>5.6. 로그 보관 기간</h3>
+
+        <p>
+            게임 로그의 보관 기간은 마인크래프트 및
+            사용하는 런처 환경에 따라 달라질 수 있습니다.
+        </p>
+
+        <p>
+            MC API MOD는 기본 게임 로그에 별도의
+            자동 삭제 기간을 설정하지 않습니다.
+        </p>
+
+        <p>
+            로그는 게임 또는 런처에 의해 교체·정리되거나,
+            이용자가 직접 삭제할 때까지 남을 수 있습니다.
+        </p>
+
+        <h3>5.7. 로그 삭제 방법</h3>
+
+        <ol>
+            <li>마인크래프트 게임을 종료합니다.</li>
+            <li>해당 게임의 실행 디렉터리를 엽니다.</li>
+            <li><code>logs</code> 폴더로 이동합니다.</li>
+            <li>
+                개인정보가 포함된 로그 파일을 확인합니다.
+            </li>
+            <li>
+                필요한 경우 해당 로그 파일을 삭제합니다.
+            </li>
+        </ol>
+
+        <div class="info-box warning">
+            <strong>주의</strong>
+            <p>
+                로그 파일을 삭제하면 게임 오류 분석에
+                필요한 기록도 함께 사라질 수 있습니다.
+            </p>
+            <p>
+                MC API MOD의 [연동 해제] 기능만으로
+                이미 생성된 게임 로그는 자동 삭제되지 않습니다.
+            </p>
+        </div>
+
+        <p>
+            별도의 채팅 기록 모드, 방송 프로그램,
+            화면 녹화 프로그램 및 백업 시스템이 생성한
+            기록은 해당 프로그램의 관리 방법에 따라
+            별도로 삭제해야 합니다.
+        </p>
+
+        <h3>5.8. 게임 설정 보관</h3>
+
+        <p>
+            이벤트 설정은 이용자 PC의
+            다음 파일에 저장됩니다.
+        </p>
+
+        <div class="info-box">
+            <code>config/mc_api_mod.json</code>
+        </div>
+
+        <p>
+            설정 파일은 이용자가 설정을 초기화하거나
+            직접 삭제할 때까지 보관될 수 있습니다.
+        </p>
+    </section>
+
+    <!-- 6. 보안 -->
+    <section id="security">
+        <h2>6. 접근 권한 및 보안 조치</h2>
+
+        <p>
+            MC API MOD는 다음 보안 원칙을
+            적용하도록 개발할 예정입니다.
+        </p>
+
+        <ol>
+            <li>
+                스트리머 본인이 동의한 SOOP API
+                권한만 사용합니다.
+            </li>
+            <li>
+                OAuth 인증 시 무작위 state 값을
+                생성하고 검증합니다.
+            </li>
+            <li>
+                SOOP 인증 서버와 HTTPS로 통신합니다.
+            </li>
+            <li>
+                인증 토큰을 일반 GUI나 로그에
+                노출하지 않습니다.
+            </li>
+            <li>
+                계정 정보는 필요한 기능 수행에만 사용합니다.
+            </li>
+            <li>
+                승인되지 않은 API 권한으로
+                정보를 요청하지 않습니다.
+            </li>
+            <li>
+                공개 배포용 모드에 Client Secret이
+                노출되지 않도록 안전한 인증 구조를
+                적용할 예정입니다.
+            </li>
+        </ol>
+
+        <p>
+            별도의 계정 정보 저장 서버나 데이터베이스는
+            초기 버전에서 운영하지 않을 계획입니다.
+        </p>
+
+        <p>
+            SOOP 공식 인증 및 API 연결을 위해 필요한
+            정보는 해당 서비스 서버로 전달될 수 있으며,
+            이용자 개인정보를 별도의 광고·분석 목적으로
+            제공하지 않을 예정입니다.
+        </p>
+    </section>
+
+    <!-- 7. 삭제 -->
+    <section id="deletion">
+        <h2>7. 연동 해제 및 개인정보 삭제</h2>
+
+        <h3>7.1. 모드 내 연동 해제</h3>
+
+        <p>
+            다음 경로에서 SOOP 연동을 해제할 수
+            있도록 구현할 예정입니다.
+        </p>
+
+        <div class="info-box">
+            <code>
+                MC API MOD 설정 → 연결 → 연동 해제
+            </code>
+        </div>
+
+        <p>
+            연동 해제 시 다음 작업을 수행하도록
+            구현할 예정입니다.
+        </p>
+
+        <ol>
+            <li>실시간 정보 수신 중단</li>
+            <li>추가 API 요청 및 이벤트 실행 중단</li>
+            <li>인증 토큰의 메모리 참조 제거</li>
+            <li>계정 및 방송국 표시 정보 제거</li>
+            <li>연결 상태를 미연결로 변경</li>
+        </ol>
+
+        <p>
+            현재 로컬 인증 정보 제거를 위한 기초 코드는
+            작성됐으나, 실제 SOOP API 연결 상태에서
+            전체 절차가 검증된 것은 아닙니다.
+        </p>
+
+        <h3>7.2. SOOP 권한 철회</h3>
+
+        <p>
+            모드 내부의 [연동 해제]는 로컬 인증 정보를
+            폐기하는 기능이며, SOOP 서버 측에 발급된
+            인증 권한을 자동으로 철회한다는 의미는 아닙니다.
+        </p>
+
+        <p>
+            이용자는 SOOP에서 제공하는 연결 서비스
+            관리 기능을 통해 별도로 애플리케이션의
+            접근 권한을 철회할 수 있습니다.
+        </p>
+
+        <p>
+            권한이 철회되거나 인증이 유효하지 않은 경우
+            API 요청을 중단하도록 개발할 예정입니다.
+        </p>
+
+        <h3>7.3. 로컬 설정 삭제</h3>
+
+        <p>
+            게임 내 [설정 초기화] 기능을 이용하거나
+            다음 파일을 직접 삭제할 수 있습니다.
+        </p>
+
+        <div class="info-box">
+            <code>config/mc_api_mod.json</code>
+        </div>
+
+        <p>
+            설정 초기화는 이벤트 설정을 초기값으로
+            되돌리는 기능으로, 로그 파일까지 삭제하는
+            기능은 아닙니다.
+        </p>
+
+        <h3>7.4. 게임 로그 삭제</h3>
+
+        <p>
+            이미 생성된 게임 로그는 자동 삭제되지 않으므로,
+            이용자가 게임 종료 후
+            <code>logs</code> 폴더에서 확인하고
+            직접 삭제할 수 있습니다.
+        </p>
+
+        <h3>7.5. 서비스 이용 종료 및 계정 탈퇴</h3>
+
+        <p>
+            MC API MOD는 별도의 회원가입 기능이나
+            자체 회원 데이터베이스를 운영하지 않을
+            예정입니다.
+        </p>
+
+        <p>
+            이용을 종료하려는 경우 모드 연동을 해제하고,
+            SOOP 측 권한을 철회한 뒤, 필요에 따라
+            로컬 설정 및 로그 파일을 삭제할 수 있습니다.
+        </p>
+
+        <p>
+            SOOP 계정 자체의 탈퇴 및 SOOP 서버에
+            저장된 정보 삭제는 SOOP에서 제공하는
+            절차에 따라 진행해야 합니다.
+        </p>
+    </section>
+
+    <!-- 8. 문의 -->
+    <section id="contact">
+        <h2>8. 개인정보 문의 및 삭제 요청</h2>
+
+        <p>
+            개인정보 처리, 연동 해제 및 삭제 방법에
+            대한 문의는 다음 연락처로 요청할 수 있습니다.
+        </p>
+
+        <div class="contact">
+            <p>
+                <strong>운영자</strong><br>
+                개인 개발자 Shibarski
+            </p>
+
+            <p>
+                <strong>문의 이메일</strong><br>
+                <a href="mailto:dnsl8807@naver.com">
+                    dnsl8807@naver.com
+                </a>
+            </p>
+        </div>
+
+        <p>
+            이용자가 삭제를 요청하면 운영자는
+            요청 내용을 확인하고, 삭제 대상과 처리
+            방법을 안내합니다.
+        </p>
+
+        <p>
+            이용자의 PC에 보관된 로컬 파일은
+            운영자가 직접 원격 삭제할 수 없으므로,
+            이용자가 수행할 수 있는 연동 해제 및
+            파일 삭제 절차를 안내합니다.
+        </p>
+
+        <p>
+            인증 비밀번호, 액세스 토큰 및
+            Client Secret 등 민감한 인증 정보는
+            이메일 문의 시 전송하지 마세요.
+        </p>
+    </section>
+
+    <!-- 9. 개발 상태 -->
+    <section id="development">
+        <h2>9. 개발 및 서비스 운영 상태</h2>
+
+        <h3>
+            <span class="status">현재 구현</span>
+        </h3>
+
+        <ul>
+            <li>마인크래프트 모드 설정 GUI</li>
+            <li>채팅·후원·구독 이벤트 설정 및 관리</li>
+            <li>이벤트별 발동 확률 설정</li>
+            <li>가상 채팅 및 후원 시뮬레이터</li>
+            <li>신규·갱신 구독 시뮬레이터</li>
+            <li>가상 후원자 이름과 별풍선 개수 표시</li>
+            <li>로컬 JSON 설정 저장</li>
+            <li>OAuth 로그인 및 로컬 콜백 기초 코드</li>
+            <li>로컬 인증 정보 제거 기초 코드</li>
+        </ul>
+
+        <h3>
+            <span class="status future">
+                API 승인 후 개발 예정
+            </span>
+        </h3>
+
+        <ul>
+            <li>SOOP 실제 OAuth 계정 인증 검증</li>
+            <li>실제 방송국 정보 응답 조회 및 표시</li>
+            <li>방송 시작·종료 상태 자동 감지</li>
+            <li>실시간 방송 채팅 수신 및 표시</li>
+            <li>채팅 명령어 자동 이벤트 실행</li>
+            <li>별풍선 후원 및 구독 실시간 이벤트</li>
+            <li>실시간 연결 해제 및 보안 절차 검증</li>
+        </ul>
+
+        <div class="info-box warning">
+            <strong>개발 상태 고지</strong>
+
+            <p>
+                현재 가상 이벤트 시뮬레이터는 SOOP 서버와
+                연결되지 않은 테스트 기능입니다.
+            </p>
+
+            <p>
+                실제 방송 데이터의 수신은 SOOP API의
+                지원 여부 및 필요한 권한 승인을 확인한
+                후 개발할 예정입니다.
+            </p>
+        </div>
+
+        <p>
+            개인정보 처리방침은 실제 구현 및 운영
+            상태에 따라 수정할 수 있으며,
+            변경 사항은 서비스 홈페이지를 통해
+            안내하겠습니다.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>MC API MOD — 개인정보 처리방침</p>
+
+    <p>
+        운영자: Shibarski |
+        <a href="mailto:dnsl8807@naver.com">
+            dnsl8807@naver.com
+        </a>
+    </p>
+
+    <p>
+        <a href="index.html">서비스 홈페이지</a>
+    </p>
+</footer>
+
 </body>
 </html>
